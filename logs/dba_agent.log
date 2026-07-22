@@ -1,0 +1,520 @@
+2026-07-22 13:28:17,089 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 13:28:18,687 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 13:39:07,203 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 13:39:10,730 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 13:45:37,180 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 13:45:56,014 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:45:56,065 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH
+2026-07-22 13:48:28,056 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 13:48:42,003 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:48:42,040 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH
+2026-07-22 13:48:44,497 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:09,363 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:09,368 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:50:11,225 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:11,230 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:50:11,361 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 13:50:13,199 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:13,202 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:50:14,906 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:14,910 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:50:16,759 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:16,825 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like you can order products based on categories. The categories table has a list of categories, and the products table has a foreign key referencing the categories table, which means you can 
+2026-07-22 13:50:18,640 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:18,643 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:50:20,219 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:20,221 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:50:22,045 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:22,058 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:50:24,490 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:24,495 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Would you like to know more about a specific category or product?
+2026-07-22 13:50:26,488 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:26,492 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:50:28,500 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:28,507 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:50:30,166 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:30,171 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:50:31,753 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:50:31,755 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 10.000000 seconds
+2026-07-22 13:50:42,656 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:42,661 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:50:44,164 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:50:44,166 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2026-07-22 13:50:57,627 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:50:57,632 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:50:59,368 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:50:59,370 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2026-07-22 13:51:13,421 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:51:13,425 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:51:15,430 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:51:15,432 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2026-07-22 13:51:29,990 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:51:30,000 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like you can order products based on categories, and you can also filter orders by customer. The customers table has a list of customers, and the orders table has a foreign key referencing th
+2026-07-22 13:51:32,261 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:51:32,273 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:51:33,901 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:51:33,902 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2026-07-22 13:51:47,322 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:51:47,332 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:51:50,476 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:51:50,508 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:51:52,371 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:51:52,372 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-07-22 13:52:03,804 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:52:03,808 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Would you like to know more about a specific category, product, or customer?
+2026-07-22 13:52:06,357 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:52:06,375 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:52:08,459 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:52:08,460 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2026-07-22 13:54:27,786 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 13:55:02,805 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:55:02,845 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:55:04,988 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:55:04,991 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: I'm happy to assist you. What would you like to know about the database?
+2026-07-22 13:55:06,736 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:55:06,740 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH
+2026-07-22 13:55:08,306 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:58:37,098 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 13:58:50,049 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:58:50,085 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH
+2026-07-22 13:58:52,547 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:16,664 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:16,670 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:59:18,430 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:18,438 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:59:18,544 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 13:59:20,269 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:20,271 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:59:22,053 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:22,055 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like the categories table has id and name columns. The id is an integer and the name is a string with a maximum length of 80 characters.
+2026-07-22 13:59:23,827 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:23,829 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:59:25,454 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:25,458 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:59:27,415 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:27,424 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:59:29,019 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:29,022 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:59:30,513 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:59:30,514 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-07-22 13:59:38,034 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:38,051 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 13:59:39,807 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:59:39,808 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2026-07-22 13:59:54,009 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:54,022 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like the products table has id, name, category_id, price, and stock columns. The id and category_id are integers, the name is a string with a maximum length of 150 characters, the price is a 
+2026-07-22 13:59:55,709 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:59:55,717 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 13:59:57,365 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:59:57,365 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2026-07-22 14:00:10,676 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:00:10,685 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:00:12,317 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:00:12,320 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 14:00:13,850 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 14:00:13,852 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-07-22 14:00:25,548 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:00:25,552 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:00:27,221 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 14:00:27,238 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2026-07-22 14:00:41,936 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:00:41,941 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:00:43,864 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 14:00:43,865 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2026-07-22 14:00:58,566 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:00:58,571 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like the orders table has id, customer_id, order_date, status, and total columns. The id and customer_id are integers, the order_date is a datetime, the status is a string with a maximum leng
+2026-07-22 14:13:28,238 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 14:13:39,520 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:13:39,556 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH
+2026-07-22 14:13:41,260 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:14:01,234 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:14:01,238 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH
+2026-07-22 14:14:03,537 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:14:52,772 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:14:52,778 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 14:14:54,453 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:14:54,457 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:14:54,588 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 14:14:56,203 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:14:56,207 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It looks like we have 5 tables in our database: categories, customers, order_items, orders, and products.
+2026-07-22 14:14:58,058 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:14:58,062 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 14:15:00,462 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:15:00,468 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:15:02,014 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:15:02,017 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 14:15:03,720 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:15:03,724 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Would you like to know more about the structure of these tables?
+2026-07-22 14:15:05,464 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:15:05,470 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst
+2026-07-22 14:24:51,128 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 14:25:02,310 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:02,353 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:25:05,460 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:39,402 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:39,405 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:25:41,344 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:41,348 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:25:41,471 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 14:25:43,287 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:43,289 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: The database contains 5 tables: categories, customers, order_items, orders, and products.
+2026-07-22 14:25:45,112 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:45,115 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:25:46,949 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:46,951 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:25:49,032 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:49,053 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:25:51,037 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:51,039 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:25:53,157 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 14:25:53,158 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-07-22 14:25:56,594 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:56,598 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: The database schema has been retrieved. The categories table has two columns: id and name. The customers table has six columns: id, full_name, email, city, country, and created_at. The order_items tab
+2026-07-22 14:25:58,633 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:58,636 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:26:00,355 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 14:26:00,359 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 16.000000 seconds
+2026-07-22 14:27:17,366 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 14:27:27,570 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:27,607 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:27:29,236 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:46,873 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:46,877 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:27:48,545 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:48,548 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:27:48,646 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 14:27:50,375 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:50,382 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like the function call returned a string with the table names. However, the function 'list_database_tables' is supposed to return a list of table names. Let me try again.
+
+
+2026-07-22 14:27:52,014 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:52,019 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:27:53,716 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:53,719 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: What would you like to do next?
+2026-07-22 14:27:55,220 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:55,225 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:27:56,639 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 14:27:56,640 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-07-22 14:27:59,039 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:27:59,045 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:28:00,540 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:28:00,543 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:28:01,855 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 14:28:01,857 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2026-07-22 14:39:06,896 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 14:39:14,708 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:14,732 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:39:16,107 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:27,542 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:27,549 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:39:29,333 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:29,339 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:39:29,442 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 14:39:31,289 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:31,293 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like the list_database_tables function returned a string with the table names. However, the function is supposed to return a list of table names. Let me try again.
+
+
+2026-07-22 14:39:32,809 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:32,812 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:39:34,537 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:34,540 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: What would you like to do next?
+2026-07-22 14:39:36,186 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:39:36,190 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:39:37,748 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:40:12,239 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:40:12,243 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:40:13,966 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:40:13,969 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:40:15,872 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:40:15,881 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Would you like to get the schema of a specific table, or execute a SQL query?
+2026-07-22 14:40:17,513 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:40:17,518 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:40:19,462 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:08,071 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 14:43:16,825 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:16,864 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:43:18,477 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:32,449 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:32,451 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:43:34,209 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:34,212 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:43:34,316 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 14:43:36,401 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:36,403 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: It seems like the function call returned a string with the table names. However, the function 'list_database_tables' is supposed to return a comma-separated string of all table names in the database. 
+2026-07-22 14:43:38,689 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:38,691 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:43:40,755 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:40,758 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: What would you like to do next?
+2026-07-22 14:43:43,004 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:43:43,010 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:43:45,372 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:44:39,749 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 14:44:48,337 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:44:48,371 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:44:50,180 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:45:00,127 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:45:00,130 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 14:45:02,038 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:45:02,041 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:45:02,143 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 14:45:04,503 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:45:04,506 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 14:45:07,239 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:45:07,242 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: The database contains 5 tables: categories, customers, order_items, orders, and products. The tables have the following columns and relationships:
+
+- categories: id, name
+- customers: id, full_name, e
+2026-07-22 14:45:09,136 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:45:09,139 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 14:45:11,006 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:53:35,985 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 15:54:15,436 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:54:15,477 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 15:54:17,360 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:55:29,726 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:55:29,729 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 15:55:31,802 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:55:31,808 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 15:55:31,939 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 15:55:34,536 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:55:34,545 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 15:55:36,514 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:55:36,518 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: The database contains 5 tables: categories, customers, order_items, orders, and products. The categories table has columns for id and name. The customers table has columns for id, full_name, email, ci
+2026-07-22 15:55:36,522 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 15:56:12,800 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:56:12,806 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 15:56:15,008 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:56:15,018 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 15:56:16,590 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:56:16,594 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: The categories of orders are: delivered, returned, pending, shipped, and cancelled.
+2026-07-22 15:56:16,597 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:02:16,271 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:02:26,822 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:02:26,867 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:02:28,770 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:02:38,643 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:02:38,647 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:02:41,995 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:02:42,002 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:02:42,122 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 16:02:44,384 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:02:44,388 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Here are the tables in the database:
+* categories
+* customers
+* order_items
+* orders
+* products 
+
+To understand the structure of these tables, I will now call the get_table_schemas function.
+
+
+2026-07-22 16:02:46,835 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:02:46,838 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Here are the tables in the database:
+* categories: id, name
+* customers: id, full_name, email, city, country, created_at
+* order_items: id, order_id, product_id, quantity, unit_price
+* orders: id, cus
+2026-07-22 16:02:46,844 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:03:20,016 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:03:20,020 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:03:22,362 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:03:22,454 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:03:23,538 | WARNING  | Database.Database_Tools | Query returned 20000 rows. Truncating to 100 for token safety.
+2026-07-22 16:03:28,498 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:03:28,509 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: ### Orders
+Here are the first 100 orders in the database:
+| id | customer_id | order_date | status | total |
+|----|------------|------------|--------|-------|
+| 1  | 4350       | 2025-09-17 | delivere
+2026-07-22 16:03:28,518 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:04:24,931 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:04:25,011 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:04:27,734 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:04:27,735 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-07-22 16:04:38,587 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:05:27,392 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:05:41,063 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:05:41,184 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:05:43,381 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:06:00,484 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:06:00,486 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:06:02,530 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 16:06:02,587 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 400 - {'error': {'message': "Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=execute_read_query {"query": "SELECT * FROM orders WHERE order_date = \'2024-05-16\'"}</function>'}}
+2026-07-22 16:07:41,054 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:07:49,357 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:07:49,388 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:07:50,936 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:08:03,467 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:08:03,470 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:08:05,475 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:08:05,482 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:08:05,564 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 16:08:08,140 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:08:08,145 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Here are the tables present in the database:
+* categories
+* customers
+* order_items
+* orders
+* products 
+
+To understand the structure of these tables, I will now call the get_table_schemas function to
+2026-07-22 16:08:10,187 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:08:10,195 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Here are the tables present in the database:
+* categories: id, name
+* customers: id, full_name, email, city, country, created_at
+* order_items: id, order_id, product_id, quantity, unit_price
+* orders:
+2026-07-22 16:08:10,201 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:08:42,653 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:08:42,658 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:08:44,558 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:09:06,988 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:09:06,990 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:09:08,751 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:09:08,756 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:09:10,314 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 16:09:10,374 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 400 - {'error': {'message': "'messages.13' : for 'role:tool' the following must be satisfied[('messages.13.content' : one of the following must be satisfied[('messages.13.content' : value must be a string) OR ('messages.13.content' : minimum number of items is 1)])]", 'type': 'invalid_request_error'}}
+2026-07-22 16:11:25,601 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:11:25,606 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:11:27,411 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:11:27,416 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:11:27,577 | WARNING  | Database.Database_Tools | Query returned 5584 rows. Truncating to 100 for token safety.
+2026-07-22 16:11:31,520 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:11:31,530 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: Here are the orders placed in the year 2026:
+| id | customer_id | order_date           | status    | total    |
+|----|------------|----------------------|-----------|----------|
+| 5  | 2512       | 20
+2026-07-22 16:11:31,536 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:11:53,098 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:11:53,099 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-22 16:11:57,378 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:11:57,379 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-07-22 16:12:00,273 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:12:00,282 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:12:01,766 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:12:01,768 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 32.000000 seconds
+2026-07-22 16:12:35,713 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:13:35,039 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:13:35,077 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kwe65szzftsst9ax729n6gb8` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 96671, Requested 8048. Please try again in 1h7m57.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-22 16:16:40,882 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:16:52,953 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-22 16:16:52,998 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 404 - {'error': {'message': 'The model `qwen/qwen3-32b` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-22 16:17:26,775 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-22 16:17:26,801 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 404 - {'error': {'message': 'The model `qwen/qwen3-32b` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-22 16:17:35,942 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:17:46,126 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-22 16:17:46,154 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-120b ` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-22 16:18:55,302 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-22 16:18:55,351 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-120b ` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-22 16:19:05,972 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:19:17,045 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:19:17,084 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:19:18,933 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:19:36,954 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:19:36,958 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:19:38,858 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:19:38,861 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:19:38,971 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 16:19:41,158 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:19:41,163 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:19:43,548 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:19:43,552 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:19:43,606 | ERROR    | Database.Database_Tools | SQL Read Execution Error: (pymysql.err.OperationalError) (1305, 'FUNCTION dba_agent_test.strftime does not exist')
+[SQL: SELECT * FROM orders WHERE strftime('%%Y', order_date) = '2026']
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-22 16:19:46,117 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:19:46,122 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:19:46,398 | WARNING  | Database.Database_Tools | Query returned 5584 rows. Truncating to 100 for token safety.
+2026-07-22 16:19:48,212 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:19:48,213 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-07-22 16:20:00,457 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:20:00,461 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:20:02,102 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:20:02,104 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 43.000000 seconds
+2026-07-22 16:20:47,593 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:20:47,610 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:20:50,419 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:20:50,420 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 51.000000 seconds
+2026-07-22 16:21:53,987 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:22:05,309 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:22:05,338 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:22:07,195 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:22:20,033 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:22:20,043 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:22:22,308 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:22:22,312 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:22:22,395 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 16:22:24,886 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:22:24,890 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:22:27,158 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:22:27,169 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:22:27,336 | WARNING  | Database.Database_Tools | Query returned 5584 rows. Truncating to 100 for token safety.
+2026-07-22 16:22:28,703 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:22:28,706 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-07-22 16:22:41,626 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:22:41,630 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:22:43,650 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 16:22:43,654 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 37.000000 seconds
+2026-07-22 16:23:22,312 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:23:22,321 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: **All orders placed in 2026**
+
+| id | customer_id | order_date           | status    | total   |
+|----|-------------|----------------------|-----------|---------|
+| 5  | 2512        | 2026‑04‑12 15:53
+2026-07-22 16:23:22,329 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:24:27,081 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 16:24:27,133 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 400 - {'error': {'message': 'failed to template request: failed to render tokenized output: failed to render tokens with harmony: HarmonyError: EncodingError: Message=render failed: Tools should have a name!', 'type': 'invalid_request_error'}}
+2026-07-22 16:24:59,279 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 16:24:59,306 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 400 - {'error': {'message': 'failed to template request: failed to render tokenized output: failed to render tokens with harmony: HarmonyError: EncodingError: Message=render failed: Tools should have a name!', 'type': 'invalid_request_error'}}
+2026-07-22 16:29:27,999 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:29:37,917 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:29:37,947 | INFO     | Agents.DBA_Agent | Supervisor routing decision: FINISH | Status: PENDING
+2026-07-22 16:29:39,418 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:30:19,359 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:30:19,364 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:30:21,630 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:30:21,635 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:30:21,765 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 16:30:24,166 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:30:24,172 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:30:26,447 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:30:26,455 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:30:28,707 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:30:28,717 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:30:33,616 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:30:33,620 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: **Number of Orders per Year**
+
+- 2024: 4,544 orders  
+- 2025: 9,872 orders  
+- 2026: 5,584 orders  
+
+The bar chart visualizing this data has been saved to:
+
+**`outputs/charts/number_of_orders_per_year
+2026-07-22 16:30:33,626 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:33:31,854 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 16:33:31,907 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 400 - {'error': {'message': 'failed to template request: failed to render tokenized output: failed to render tokens with harmony: HarmonyError: EncodingError: Message=render failed: Tools should have a name!', 'type': 'invalid_request_error'}}
+2026-07-22 16:33:45,167 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 16:33:45,190 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 400 - {'error': {'message': 'failed to template request: failed to render tokenized output: failed to render tokens with harmony: HarmonyError: EncodingError: Message=render failed: Tools should have a name!', 'type': 'invalid_request_error'}}
+2026-07-22 16:33:55,728 | INFO     | utils.Logging_Config | Logging initialized. Writing to C:\Users\Nikhil Tyagi\OneDrive\Desktop\DBA_Agent\logs\dba_agent.log
+2026-07-22 16:34:20,955 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:34:20,984 | INFO     | Agents.DBA_Agent | Supervisor routing decision: sql_analyst | Status: PENDING
+2026-07-22 16:34:22,702 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:34:22,711 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:34:22,824 | INFO     | Database.connection | Database engine connected to localhost:3306/dba_agent_test
+2026-07-22 16:34:24,718 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:34:24,724 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:34:26,766 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:34:26,772 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: [tool call]
+2026-07-22 16:34:28,924 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 16:34:28,930 | INFO     | Agents.Data_Analyst_agent | SQL Analyst agent response: **Customer with the highest number of orders**
+
+- **ID:** 1147  
+- **Name:** Brian Hall  
+- **Email:** dsmith@example.com  
+- **Total Orders:** 14  
+2026-07-22 16:34:28,936 | INFO     | Agents.DBA_Agent | Supervisor short-circuiting to FINISH. Status: SUCCESS, Loops: 2
+2026-07-22 16:34:58,340 | INFO     | Middlewares.PII_filters | 🛡️ PII Guardrail Triggered: Redacting EMAIL
+2026-07-22 16:34:58,342 | INFO     | Middlewares.PII_filters | 🛡️ PII Guardrail Triggered: Redacting EMAIL
+2026-07-22 16:34:59,855 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 16:34:59,885 | ERROR    | Agents.DBA_Agent | Graph execution error: Error code: 400 - {'error': {'message': 'failed to template request: failed to render tokenized output: failed to render tokens with harmony: HarmonyError: EncodingError: Message=render failed: Tools should have a name!', 'type': 'invalid_request_error'}}
