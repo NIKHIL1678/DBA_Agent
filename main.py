@@ -11,6 +11,7 @@ the root of all imports (Agents\, Database\, Graphs\, Tools\, etc.),
 without you needing to think about how Python resolves packages.
 """
 
+import asyncio
 from utils.Logging_Config import setup_logging
 
 setup_logging()
@@ -18,4 +19,4 @@ setup_logging()
 from Agents.DBA_Agent import run_cli
 
 if __name__ == "__main__":
-    run_cli()
+    asyncio.run(run_cli())

@@ -58,7 +58,7 @@ def sql_agent_node(state: MessagesState) -> dict:
     Decides whether to call a tool or produce a final answer.
     """
     llm = ChatGroq(
-        model="openai/gpt-oss-120b",  # lighter/cheaper model for tool-routing within the sub-agent
+        model="llama-3.3-70b-versatile",  # lighter/cheaper model for tool-routing within the sub-agent
         temperature=0,
     )
     llm_with_tools = llm.bind_tools(SQL_ANALYST_TOOLS)
